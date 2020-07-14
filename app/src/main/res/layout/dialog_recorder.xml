@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/c_9d000000">
+
+    <RelativeLayout
+        android:id="@+id/rlParent"
+        android:layout_width="109dp"
+        android:layout_height="109dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_store_im_withdraw"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:background="@color/c_7e332e"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="松开手指，取消发送"
+            android:textColor="#ffffff"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="109dp"
+        android:layout_height="109dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_store_im_record"/>
+
+            <ImageView
+                android:id="@+id/ivItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_store_im_volume01"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="0:0"
+            android:textColor="#ffffff"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="手指上滑，取消发送"
+            android:textColor="#ffffff"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
